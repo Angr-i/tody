@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Tody</title>
+</head>
+<body>
+    <div class="conteiner center-top ">
+        <div class="row">
+            <div class="input">
+                <div class="block">
+                    <div >
+                        <input type="text" name="text" id="text">
+                        <button class="btm" onclick="tody()" type="submit"><img src="/img/add.png" alt=""></button>
+                    </div>
+                </div>
+                
+                
+            </div>
+            <div class="ul">
+                <ul id="ol">
+                    
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+
+    
+</body>
+<script>
+    function tody(){
+        let liLast = document.createElement('li');
+        liLast.innerHTML = this.text.value;
+        ol.append(liLast); // вставить liLast в конец <ol>
+    }
+
+    // ol.before('before'); // вставить строку "before" перед <ol>
+    // ol.after('after'); // вставить строку "after" после <ol>
+  
+    // let liFirst = document.createElement('li');
+    // liFirst.innerHTML = 'prepend';
+    // ol.prepend(liFirst); // вставить liFirst в начало <ol>
+  
+
+  </script>
+</html>
